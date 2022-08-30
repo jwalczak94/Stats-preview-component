@@ -30,12 +30,18 @@ body {
   border-radius: 10px;
   background-color: var(--DarkDesaturatedBlue);
   text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+img {
+  mix-blend-mode: multiply;
+  opacity: 82%;
+  background-color: violet;
 }
 
 .image-mobile {
   width: 100%;
-  border-radius: 10px 10px 0 0;
-  filter: opacity(0.5) drop-shadow(0 0 0 var(--SoftViolet));
 }
 
 .image-desktop {
@@ -106,8 +112,6 @@ h1 {
 
   .image-desktop {
     display: block;
-    border-radius: 0 15px 15px 0;
-    filter: opacity(0.5) drop-shadow(0 0 0 var(--SoftViolet));
   }
 
   .text-box {
