@@ -32,12 +32,19 @@ body {
   text-align: center;
   border-radius: 10px;
   overflow: hidden;
+  position: relative
 }
 
-img {
+.mainbox::before {
+  content: '';
+  position: absolute;
+  height: 268px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--SoftViolet);
+  opacity: 80%;
   mix-blend-mode: multiply;
-  opacity: 82%;
-  background-color: violet;
 }
 
 .image-mobile {
@@ -104,6 +111,11 @@ h1 {
     flex-direction: row-reverse;
     flex-basis: 1100px;
     text-align: left;
+  }
+
+  .mainbox::before {
+    height: 100%;
+    width: 540px;
   }
 
   .image-mobile {
