@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Stats preview card component</title>
-</head>
+  <body>
+    <main class="container">
+      <div class="card-content">
+        <!-- IMAGES -->
+        <picture class="overlay">
+          <source srcset="./images/image-header-desktop.jpg" media="(min-width:1200px)" />
+          <img src="./images/image-header-mobile.jpg" alt="Three women in the office" />
+        </picture>
 
-<body>
-  <main class="mainbox">
-    <img src="./images/image-header-desktop.jpg" alt="header image" class="image-mobile">
-    <img src="./images/image-header-desktop.jpg" alt="header image" class="image-desktop">
-    <div class="text-box">
-      <h1>
-        Get <span id="insight">insights</span> that help your business grow.
-      </h1>
-      <p class="description">
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer
-        experience, and overall efficiency.
-      </p>
-      <div class="stats">
-        <div class="stat">
+        <!-- TEXT CONTENT -->
+        <div class="description">
+          <h1>Get <span class="color-accent">insights</span> that help your business grow.</h1>
           <p>
-            10k+ <span class="text">companies</span>
+            Discover the benefits of data analytics and make better decisions regarding revenue,
+            customer experience, and overall efficiency.
           </p>
-        </div>
-        <div class="stat">
-          <p>
-            314 <span class="text">templates</span>
-          </p>
-        </div>
-        <div class="stat">
-          <p>
-            12M+ <span class="text">queries</span>
-          </p>
+          <!-- STATS -->
+          <div class="stats-container">
+            <div class="stat">
+              <p class="lead">10k+</p>
+              <p class="uppercase">companies</p>
+            </div>
+            <div class="stat">
+              <p class="lead">314</p>
+              <p class="uppercase">templates</p>
+            </div>
+            <div class="stat">
+              <p class="lead">12M+</p>
+              <p class="uppercase">queries</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
